@@ -6,41 +6,45 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="first.html">Student Registration Form
-        <br><br>
-        <label>First name : </label>
-        <input type="text" placeholder="First name"><br><br>
+    <form action="first.html">
+        <h1>Student Registration Form</h1>
+
+        <label for="first_name">First name : </label>
+        <input type="text" placeholder="First name" id="first_name" required><br><br>
         
-        <label>Last name : </label>
-        <input type="text" placeholder="Last name"><br><br>
+        <label for="last_name">Last name : </label>
+        <input type="text" placeholder="Last name" id="last_name" required><br><br>
         
-        <label>Email : </label>
-        <input type="email" placeholder="Email"><br><br>
+        <label for="email">Email : </label>
+        <input type="email" placeholder="Email" id="email" required><br><br>
         
-        <label>Date of Birth : </label> 
-        <input type="date"><br><br>
+        <label for="dob">Date of Birth : </label> 
+        <input type="date" id="dob" required><br><br>
         
-        <label>Username : </label>
-        <input type="text" placeholder="Username"><br><br>
+        <label for="username">Username : </label>
+        <input type="text" placeholder="Username" id="username" required><br><br>
         
-        <label>Password : </label> 
-        <input type="password" placeholder="Password"><br><br>
+        <label for="password">Password : </label> 
+        <input type="password" placeholder="Password" id="password" required><br><br>
         
-        <label>Gender : </label>
-        <input type="radio">
-        <label>Male</label>
-        <input type="radio">
-        <label>Female</label><br><br>
+        <label for="gender">Gender : </label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label><br><br>
         
-        <label>Course : </label>
-        <select>
-            <option>BCA</option>
-            <option>BBA</option>
-            <option>BMC</option>
-            <option>MCA</option>
-        </select>
+        <label for="course">Course : </label>
+        <select id="course">
+            <option>--Select a Course--</option>
+            <option value="bca">BCA</option>
+            <option value="bba">BBA</option>
+            <option value="bmc">BMC</option>
+            <option value="mca">MCA</option>
+        </select><br><br>
         
-        <input type="submit" placeholder="Submit">
+        <input type="submit">
     </form>
 </body>
 </html>
